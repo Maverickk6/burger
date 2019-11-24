@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './buildControl.module.css';
 
-const buildControl = (props) => (
+const buildControls = (props) => (
     <div className = {styles['BuildControl']}>
         <div className = {styles['Label']}>{props.label}</div>
         <button className = {styles['Less']} onClick = {props.removed} disabled = {props.disabled}>Less</button>
@@ -10,4 +10,4 @@ const buildControl = (props) => (
 );
 
 
-export default buildControl;
+export default buildControls;
